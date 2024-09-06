@@ -1,13 +1,13 @@
 import { Component, signal } from '@angular/core';
 import { CounterComponent } from '@shared/components/counter/counter.component';
-import { CommonModule } from '@angular/common';
+
 import { HighlightDirective } from '@shared/directives/highlight.directive';
 import { HeaderComponent } from "../../../shared/components/header/header.component";
 
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [CounterComponent, CommonModule, HighlightDirective, HeaderComponent],
+  imports: [CounterComponent, HighlightDirective, HeaderComponent],
   templateUrl: './about.component.html',
   styleUrl: './about.component.css'
 })
